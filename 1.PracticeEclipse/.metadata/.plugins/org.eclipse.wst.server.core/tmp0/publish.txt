@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Fri Mar 15 15:56:02 IST 2024
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\cpotllap\\.m2\\repository\\org\\apache\\tomcat\\tomcat-jasper-el\\10.1.17\\tomcat-jasper-el-10.1.17.jar=WEB-INF/lib/tomcat-jasper-el-10.1.17.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\cpotllap\\.m2\\repository\\org\\apache\\tomcat\\tomcat-jasper\\10.1.17\\tomcat-jasper-10.1.17.jar=WEB-INF/lib/tomcat-jasper-10.1.17.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\cpotllap\\.m2\\repository\\org\\springframework\\spring-web\\6.1.0\\spring-web-6.1.0.jar=WEB-INF/lib/spring-web-6.1.0.jar

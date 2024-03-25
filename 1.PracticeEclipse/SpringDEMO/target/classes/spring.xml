@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--  for creating any no . of objects we use prototype scope.
+   		<bean id="example" class="com.exapmle.SpringDEMO.Example" scope="prototype"></bean> -->
+
+ 	<!--  <bean id="example" class="com.exapmle.SpringDEMO.Example"></bean>	-->
+
+
+	  <bean id="example" class="com.exapmle.SpringDEMO.Example">
+	
+	<!-- *****************Autowire********************** -->
+	<!--  <bean id="example" class="com.exapmle.SpringDEMO.Example" autowire="byName">-->
+	
+	<!-- <bean id="example" class="com.exapmle.SpringDEMO.Example" autowire="byType">-->
+
+	<!-- *********setters injection ********************** -->
+	
+		<property name="age" value="21"/>							<!-- for assigning values from here primitive variable -->
+	<!-- 	<property name="dm" ref="demo"></property>				 for reference variable assigning values -->
+		<!--  <property name="com" ref="demo"></property>-->
+		<!--  <property name="com" ref="com1"/>-->
+		
+		
+		<!-- ***********inner bean used only for Example class********* 
+		<property name="com">
+		
+		<bean id="com1" class="com.exapmle.SpringDEMO.Demo" ></bean>
+		
+		</property>-->
+		
+	<!-- ********** constructor injection****************** -->
+	
+	<!-- we have to give in sequence of constructor parameters provide in class other wise it will give error -->
+	
+   <!--	<constructor-arg value="23"/>  intializing values in constructor
+		<constructor-arg ref="demo" /> intializing for ref variable  -->	
+		
+	<!-- in this way we can give order of our wish but should be different type of data 
+		<constructor-arg type="com.exapmle.SpringDEMO.Demo" ref="demo"/>
+		<constructor-arg type="int" value="26"/>  -->
+	
+	<!-- here also we should give in sequential order of parameters if want to work this we have to give @constructorProperties({"age","demo"}) annotation before calling constructor-->
+		
+	<!--	<constructor-arg name="dm" ref="demo"/>
+			<constructor-arg name="age" value="32"/>-->
+	
+	<!-- here we can give based on index value mostly followed -->
+	
+	<!-- 	<constructor-arg index="1" ref="demo"/>
+			<constructor-arg index="0" value="43"/>-->
+	
+	</bean>
+	 
+	<!--  <bean id="com1" class="com.exapmle.SpringDEMO.Demo" primary="true"></bean>-->
+
+	  <bean id="com1" class="com.exapmle.SpringDEMO.Demo" ></bean>
+
+	<!--  <bean id="com2" class="com.exapmle.SpringDEMO.Desktop" lazy-init="true"></bean>-->
+	
+	  <bean  class="com.exapmle.SpringDEMO.Desktop"></bean><!-- works for creation of obj based on get class method -->
+	<!--  <bean id="demo" class="com.exapmle.SpringDEMO.Demo">-->
+
+	
+	
+</beans>
+
+
+<!--  if name and ref both are same it will work 
+if we want to set the values we have to use properties
+
+Autowire : used to link them based on properties have same value and individual properties not needed
+ 
+ primary:if we use autowire bytype then if we have confusion between which ref class is taking we can mention primary="true" to run particular ref
+ 
+lazy-init: which means object will not be created by default only when you want to use it will be created in particular class
+but if your non-lazy object is dependent on the lazy object it will create obj of lazy bean
+
+ -->

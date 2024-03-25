@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+C:\Users\cpotllap\Desktop\Udemy_Java\1.PracticeEclipse\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+703594783.index
+2148480469.index
+1023317918.index
+3648486574.index

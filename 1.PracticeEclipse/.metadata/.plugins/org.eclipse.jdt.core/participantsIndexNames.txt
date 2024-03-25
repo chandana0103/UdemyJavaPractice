@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+C:\Users\cpotllap\Desktop\Udemy_Java\PracticeEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2377822386.index
+\SpringMVCdemo\src\main\resources
+C:\Users\cpotllap\Desktop\Udemy_Java\PracticeEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2730119063.index
+\SpringBootWeb1\src\main\java
+C:\Users\cpotllap\Desktop\Udemy_Java\PracticeEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3250298610.index
+\SpringMVCdemo\src\main\java
+C:\Users\cpotllap\Desktop\Udemy_Java\PracticeEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3031521093.index
+\SpringBootWeb1\src\main\java

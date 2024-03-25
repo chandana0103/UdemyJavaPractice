@@ -1,0 +1,28 @@
+package com.exapmle.SpringDEMO;
+
+import org.springframework.stereotype.Component;
+
+public class Example {
+
+	
+	private int age;
+	private Demo dm=new Demo();
+	
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		System.out.println("in setters of setting age");
+		this.age = age;
+	}
+	public Example() {
+		System.out.println("object created in example class");
+	}
+	public void show() {
+		// TODO Auto-generated method stub
+		System.out.println("in method show of class Example");
+		
+		dm.add();
+	}
+
+}
