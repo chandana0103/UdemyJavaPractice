@@ -1,0 +1,611 @@
+1)What is full stack development?
+         a developer or engineer who can build both the front end and the back end of a website.The front end (the parts of a website a user sees and interacts with) and the back end behind-the-scenes data storage and processing) require different skill sets.
+
+2)Explain software project architecture?
+         represents the design decisions related to overall system structure and behavior.
+
+3)What are the roles & responsibilities of full stack developer?
+         design, develop, and maintain fully-fledged and functioning platforms with databases or   servers.
+
+4)What is database and why we need it?
+         used for storing, maintaining and accessing any sort of data. They collect information on people, places or things. 
+
+5)What is programming language & why we need programming language?
+         to facilitate communication about the task of organizing and manipulating information, and to express algorithms precisely.
+
+6)what is JAVA?
+         Java is an object-oriented programming language. Everything in Java is associated with classes and objects, along with its attributes and methods. 
+
+7)What are the features of java?
+         simple,Platform independent,OOP language, secure,multi threading,Architectural neutral,portable,high performance,distributed.
+
+8)What is the difference between C and Java?
+         C is only compiled and not interpreted. Java is both compiled and interpreted.(C is a middle-level language as it binds the bridges between machine-level and high-level languages. Java is a high-level language as the translation of Java code takes place into machine language, using a compiler or interpreter).
+
+9)What type of applications we can develop using java & brief them?
+         enterprise applications, network applications, desktop applications, web applications, games, android app, and many more.
+
+10)What is the difference between JDK, JRE and JVM?
+      - JDK contains set of tools to develop java programs
+      - JRE providing a platform to run our java programs
+      - JVM will take care of program execution, memory allocation & de-allocation.
+
+11)What is the execution flow of java program?
+       executed sequentially one statement at a time starting from the first statement at the top and proceeding toward the bottom.
+
+12)What is the difference between interpreter and compiler?
+        -Interpreter will convert the program line by line (performance is slow)
+        -Compiler will convert all the lines of program at a time (performance is fast)
+
+13)Write JVM architecture & explain JVM components?
+        JVM will convert byte code into machine understandable format
+        Class loader: It will load .class file into JVM 
+        Method Area: Class code will be stored here
+	Heap area: Objects will be stored into heap area
+	Java Stack: Method execution information will be stored here
+	PC Register: It will maintain next line information to execute
+	Native Stack: It will maintain non-java code execution information
+	Native Interface: It will load native libraries into JVM
+	Native Libraries: Non-java libraries which are required for native code execution
+	Execution Engine: It is responsible to execute the program and provide output/result. It will use Interpreter and JIT for execution
+
+14)What is JIT? Just-in-Time 
+	an inventory management method in which goods are received from suppliers only as they are needed.
+
+15)Write Java data types with size, range and default values?
+	primitive data type:
+	byte     8bits    -128 to 127                  0
+	short    16bits   -32768to32767                0
+	int      32bits   -2147483648to2147483647      0
+	long     64bits   -9223372036854775808to---807 0
+	float    32bits                              0.0f
+	double   64bits                              0.0d
+	char     16bits    0 to65535      
+	boolean  8bits                              false
+
+
+16)What is variable and how to create variables?
+	Variables are used to store the data / value.
+ 	Variable Declaration (defining variable with data type). Ex: byte age ;
+	Variable Initialization (storing value into variable).Ex: age = abc; byte age = 20;
+
+17)Explain Java program elements?
+	The main method,Reserved words,Special symbols.Identifiers,Data types,Expressions,Input,Output.
+
+18)Write a java program to print welcome message?
+	public class welcome {
+  	  public static void main(String args[]){
+
+    	     System.out.println("welcome message");
+  	  }
+	}
+
+19)Write a java program on variables declaration, initialization?
+	public class variable {
+  	  public static void main(String args[]){
+   		int fee;
+		fee=78769;
+
+    		System.out.println(fee);
+   	  }
+	}
+
+20)How many types of comments available in java?
+	In java we have 3 types of comments
+		single line comments-----//
+		multi line comments------/* */
+		documentation comments---/** * * */
+
+21)What is identifier and what are rules available for identifier?
+	All Java components require names. Name used for classes, methods, interfaces and variables are called Identifier. 
+	Rules:1.The only allowed characters in java identifiers are:a to z, A to Z,0 to 9,$, _ (underscore)
+	      2.Identifier should not start with digit (First letter shouldn’t be digit)
+	      3:Java reserved keywords cannot be used as an identifier (53 reserved words available in java)
+	      4:Spaces are not allowed in identifiers
+	      5:Identifiers in Java are case sensitive; foo and Foo are two different identifiers
+
+22)What are the reserved words in java ?
+	Keywords are reserved words in Java that serve as a code key. These words can't be used for anything else because they're predefined. Java we have total 53 reserved words.
+
+23)Write Java Naming Conventions for packages, classes, variables and methods?
+	1.coding convention for packages: if package name contains multiple words then we will use . (dot) to separate words. ex:java.lang
+
+	2.coding convention for a class: Class name can contain any no.of words without spaces
+	class Hello{
+	}
+	class HelloWorld{
+	}
+	2.coding convention for a variables: Variable name can have any no. of words without spaces. Recommended to start variable name with lowercase letter.
+	ex:int age; , int userAge;
+	3.coding convention for methods: Method name can have any no. of words without spaces.Recommended to start method name with lowercase letter
+	ex: main() {
+	}
+	save() {	
+	}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) What is Operator and why we need operators?
+
+An operator is capable of manipulating a certain value or operand. Operator is a symbol which tells to the compiler to perform some operation. 
+2) List down all the operators available in Java?
+Arithmetic operators,Relation operators,Logical operators,Assignment operators,Conditional operators,Misc. operators
+
+3) What is the difference between Relational & Logical Operators?
+Relational operators are used to test comparison between operands or values.==,!=,>,<,>=,<=
+Logical Operators are used to check conditional expression. For example, we can use logical operators in if statement to evaluate conditional based expression.&&,||,!.
+    
+4) What is the purpose of 'new' operator?
+new is java keyword or operator which is used to create the object. we can create an object for both user defined classes and predefine classes.ex:ClassName referencevariable=new ClassName();
+
+5) What is the purpose of 'dot(.)' operator?
+This operator used to access the members of the class using reference or column.ex:ClassName.variable,ClassName.method()
+
+6) What is the purpose of instance of operator?
+It is a java keyword and used to test whether the given reference belongs to provided type or not. Type can be a class or interface. It returns either true or false.
+
+7) What is the difference between "=" and "==" operators?
+The “=” is an assignment operator used to assign the value on the right to the variable on the left. 
+The ‘==’ operator checks whether the two given operands are equal or not. If so, it returns true. Otherwise it returns false. 
+
+8) What is the purpose of Control Statements & List down all the control statements available in java?
+if we want to execute java statements according to our requirement then we have to use control statements
+These statements decide whether a specific part of the code will be executed or not. 
+
+9) What is the difference between while & do-while loops
+The while loop is used to execute a single statement or block of statements repeatedly as long as the given condition is TRUE.
+The do-while loop is used to execute a single statement or block of statements repeatedly as long as given the condition is TRUE. The do-while statement is also known as the Exit control looping statement.
+
+
+10) What is the difference between 'while' loop & 'for' loop
+A for loop is a single-line command that will be executed repeatedly. 
+While loops can be single-lined or contain multiple commands for a single condition.
+
+11) What is the difference between 'break' and 'continue' & 'return' keywords
+break is a statement that is used to break current execution flow of the program
+the continue statement is used to skip the current iteration of the loop. It jumps to the next iteration of the loop immediately. 
+return is a transferring statement which is used to stop the continuity of method
+execution.
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) What is Class ?
+Class is a blue print of object.
+-> Once class is created then we can create any no.of objects for a class
+-> 'class' keyword is used to create Classes in java.
+
+2) What is Object ?
+-> Any real-world entity is called as Object
+-> Object creation means allocating memory in JVM
+-> 'new' keyword is used to create the objects
+-> Objects will be created in heap area.
+
+3) Why we need to Create Object ?
+only creating an object makes it possible to access the attributes and functions of the class.
+
+4) What is instance variable and why we need them ?
+Variables which are declared inside the class and outside the method are called as instance variables.
+ they allow each object to have its own copy of the data.
+-> If we want to store different value based on object then use instance variable
+
+5) When memory will be allocated for instance variables ?
+When we create the object, then only memory will be allocated for instance variables.
+
+6) How many times memory will be allocated for instance variables ?
+If we create 2 objects, then 2 times memory will be allocated for instance variables.
+
+7) What is static variable and why we need them ?
+-> The variables which are declared inside the class and outside the method with 'static' keyword are called as static variables.
+-> If we want to store same value for all objects then use static variable.
+
+8) When memory will be allocated for static variables ?
+-> When class is loaded into JVM then immediately memory will be allocated for static variables.
+
+9) How many times memory will be allocated for static variables ?
+-> Memory will be allocated for static variables only once when the class is loaded into JVM.
+
+10) What is Local Variable & Why we need Local Variable ?
+-> The variables which are declared inside the method or constructor or block are called as Local Variables
+-> If we declare a variable with in the method, then that variable can be used / accessed only with in that method.
+
+11) When Memory will be allocated for local variable ?
+If we create a variable with in the method, memory will be allocated for that variable when that method is executing. After that method execution completed, local variable will be deleted from memory.
+
+12) What is Constructor why we need Constructor ?
+A constructor is a special method that is used to initialize an object / instance variables.
+-> If we don't declare a constructor in the class then JVM builds a default constructor for that class. This is known as default constructor.
+
+13) What are the rules to write Constructor ?
+• Constructor name must be same as Class Name
+• Constructor cannot take any return type but if we write any return type then the code is valid but it is considered as normal method
+• We cannot return any value from the constructor
+• Constructors can take one or parameters.
+
+14) What is Constructor Overloading & Why we need it ?
+-> Java Constructor overloading is a technique in which a class can have any number of constructors that differ in parameter list. In other words, defining two or more constructors with the same name but with different signatures is called constructor overloading in java. It is used to perform different tasks.
+
+15) What is Method and Why we need methods ?
+Methods are used to perform some operation / action.
+
+16) When to take method parameter and method return type ?
+parameters are the variables that will receive the values that are passed into the. particular method on which data method will perform the operations.
+-> we can write 0 or more number of parameters of any primitive type or array type or reference type.
+
+-> return type is data type that indicates what type of value is return by the particular method.
+-> return type can be any primitive type or array type or reference type
+
+17) When to use primitive type for method parameters & return types ?
+-> The datatype of the value we return must be match with the datatype that we specify as return type.
+
+18) When to use Object as method parameter & return type?
+We can pass Object of any class as parameter to a method in java.
+ a method can return any type of data, including objects.
+
+19) What is Object Oriented Language ?
+If we want to develop a project using OOP lanaguage then we have to use Classes & Objects
+-> Any language which follows OOPS Principles is called as OOP Language.
+
+20) What are OOPS principles?
+1) Encapsulation
+2) Abstraction
+3) Polymorphism
+4) Inheritance
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) What are Access Modifiers in Java?
+keywords in Java,restricts the access of a class, constructor, data member and method in another class.
+>defalut,public,protected,private
+
+2) When to use public, private, protected?
+> Public: Public has scope that is visible everywhere
+• Protected: Protected has scope within the package and all sub classes
+• Private: Private has scope only within the classes
+
+3) What is Inheritance?
+  taking the properties of on class into another class.
+>> class which is giving properties is called as parent class or super class or base class
+>> class which is taking properties is called as child class or sub class or derived class.
+
+4) What is Single Level and Multi-Level Inheritance?
+single:child and parent class
+ In multiple inheritance child class is taking properties from multiple parent classe;lu
+
+5) Why Java Doesn’t support Multiple Inheritance?
+In multiple inheritance child class is taking properties from multiple parent classes in this case if we have same property in all the parent classes then it is a confusion to child class to decide to take the particular property from which parent class, hence multiple inheritance is not supported in Java.
+
+6) What is Encapsulation?
+-> Encapsulation is used to combine our variables & methods as single entity / unit
+-> Encapsulation provides data hiding
+-> We can achieve encapsulation using Classes
+class Demo {
+//variables
+// methods
+}
+
+7) Why to declare variables as private?
+Private = not accesible with other Class,• Private: Private has scope only within the classes
+By making the variable a private data member, you can more easily ensure that the value is never negative. On the other hand, if the variable is public, another class could change it to a negative value which can cause other parts of the code to crash.
+
+8) What is the need of setter and getter methods?
+Getter and Setter are methods used to protect your data and make your code more secure. Getter and Setter make the programmer convenient in setting and getting the value for a particular data type.
+
+9) What is Polymorphism?
+-> Exhibiting multiple behaviours based on situation is called as Polymorphism
+Ex:-1 : in below scenario + symbol having 2 different behaviours
+10 + 20 ===> 30 (Here + is adding)
+"hi" + "hello" ==> hihello (here + is concatinating)
+
+10) What is Method Overloading and why we need it?
+Method overloading means declaring multiple methods with same method name but having different method signature.
+When we want to maintain the flexibility in our application like using one method performing several operations then we can use this method overloading.
+
+11) What is Method Overriding and why we need it?
+-> Method overriding means declaring 2 methods with same method signature in 2 different classes which are having IS-A relation.
+• Private, final and static methods cannot be overridden.
+• There must be an IS-A relationship between classes (inheritance).
+Whenever child class don't want to use definition written by the Parent class and want to use its own logic then we have to use method overriding it means we have to override the same method with new definition inside the child class.
+
+
+12) What is Abstract Method?
+Method that are declared without any body within an abstract class are called abstract method.
+The method body will be defined by its subclass.
+Abstract method can never be final and static.
+Any class that extends an abstract class must implement all the abstract methods.
+
+13) What is Interface and why we need interfaces?
+-> An interface is a fully abstract class. It includes a group of abstract methods (methods without a body).
+-> We use the interface keyword to create an interface in Java.
+• It is used to achieve total abstraction.
+• Since java does not support multiple inheritances in the case of class, by using an interface it can achieve multiple inheritances.
+• It is also used to achieve loose coupling.
+• Interfaces are used to implement abstraction. So the question arises why use interfaces when we have abstract classes?
+
+14) What is Abstract Class and Why we need them?
+-> A class which is declared using abstract keyword known as abstract class.
+-> An abstract class may or may not have abstract methods.
+-> We cannot create object of abstract class.
+-> It is used to achieve abstraction but it does not provide 100% abstraction because it can have concrete methods.
+• An abstract class must be declared with an abstract keyword.
+• It can have abstract and non-abstract methods.
+• It cannot be instantiated.
+• It is used for abstraction.
+Syntax :
+abstract class class_name { }
+
+15) Difference between Interface and Abstract Classes
+-> An interface is a fully abstract class. It includes a group of abstract methods (methods without a body).
+-> We use the interface keyword to create an interface in Java.
+Abstract classes are used to define generic types of behaviours at the top of an object-oriented programming class hierarchy, and use its subclasses to provide implementation details of the abstract class.
+
+16) What is Marker Interface and why we need them?
+-> We can also declare an interface without any abstract methods which is called Marked interface or tagged interface
+-> the main advantage of Marked interfaces is giving an instruction to JVM to perform a special task.
+Eg: Cloneable, Serializable, EventListener,
+
+17) What is difference between this keyword and super keyword?
+In Java, this is a keyword which is used to refer current object of a class. we can it to refer any member of the class. It means we can access any instance variable and method by using this keyword.
+The main purpose of using this keyword is to solve the confusion when we have same variable name for instance and local variables.
+We can use this keyword for the following purpose.
+• this keyword is used to refer to current object.
+• this is always a reference to the object on which method was invoked.
+• this can be used to invoke current class constructor.
+• this can be passed as an argument to another method.
+In Java, super keyword is used to refer to immediate parent class of a child class. In other words super keyword is used by a subclass whenever it need to refer to its immediate super class.	
+
+18) What is final keyword and when to use it?
+-> final is a keyword or modifier which can be used at variables, methods & classes.
+-> If we declare a variable as final then we can’t modify value of the variable. The variable acts like a constant. Final field must be initialized when it is declared.
+-> If we declare a method as final then we can't override that method
+-> If we declare a class as final then we can't extend from that class. We cannot inherit final class in Java.
+
+19) What is the use of var args?
+-> In Java version 1.5, Java has included a feature that simplifies the creation of methods that need to take a variable number of arguments.
+-> A method that takes a variable number of arguments is a var-args method.
+Rules for var args
+There are some rules for var args that we must follow, otherwise, the code can't compile, They are:
+1) There can be only one variable argument in the method
+2) Variable arguments (var args) must be the last argument
+3) Variable argument should have only three ellipses (...)
+
+20) What is Object class?
+-> Object class is present in java.lang package.
+-> Every class in Java is directly or indirectly derived from the Object class.
+-> If a class does not extend any other class, then it is a direct child class of Object and if extends another class then it is indirectly derived.
+-> Object class methods are available to all Java classes. Hence Object class acts as a root of inheritance hierarchy in any Java Program.
+-> Below are the methods available in java.lang.Object class.
+
+21) What is Cloning?
+ Object clone():
+This method used to clone or copy the object so that we can take the backup for the object, but in java every object is created in a way that, it can not be copied directly, if we want to perform this special operations we must follow following rules.
+1. the cloned object must be type casted to corresponding object
+2. we must handle an exception called CloneNotSupportedException
+3. corresponding class must implement a marked interface called Cloneable interface
+
+22) Can you explain all methods of Object class?
+String toString()
+	This method used to represent the object in the form of string. 
+	when we display any object it will call toString() method automatically whether we specify or not
+Class getClass():
+	This method returns the object in the form of Class using which we can get the information 
+	of particular class like class name, belongs what package,.....
+int hashCode()
+-> This method returns hashcode of the particular object .
+-> Hashcode is a unique identification number which holds address of the corresponding object.
+4. boolean equals(Object o):
+	this method compares the 2 references whether they contain same object or not by default.
+  but if we want to compare the equality of the content of 2 objects then we have to override equals() method with in the particular class. 
+6. finalize() in Java
+The finalize() method is called by the Garbage Collector when there are no more references to the object in question.
+   Thus, finalize() is called just before an object is garbage collected
+Object clone():
+This method used to clone or copy the object so that we can take the backup for the object, 
+but in java every object is created in a way that, it can not be copied directly, if we want to perform this special operations we must follow following rules.
+we must handle an exception called CloneNotSupportedException
+
+23) When to override equals ( ) method ?
+but if we want to compare the equality of the content of 2 objects then we have to override equals() method with in the particular class.
+In String class already equals() method is overridden in such a way that it will compare the equality of the content of 2 Strings.
+
+24) What is the difference between String class equals ( ) method and Object class equals ( ) method ?
+25) What is hashcode ?
+int hashCode()
+-> This method returns hashcode of the particular object .
+-> Hashcode is a unique identification number which holds address of the corresponding object.
+
+26) How to create Object for a class without using new keyword?
+Using new keyword
+Using new instance
+Using clone() method
+Using deserialization
+Using newInstance() method of Constructor class
+
+-----------------------------------------------------------------------------------------------------------------
+1) What is package and why we need packages?
+A package in Java is used to group related classes. Think of it as a folder in a file directory. We use packages to avoid name conflicts, and to write a better maintainable code.
+
+2) What is Import in java?
+Use import to access built-in and user-defined packages into your java source file so that your class can refer to a class that is in another package by directly using its name.
+
+3) What is static import?
+static imports are special kind of import statements given in java 1.5 version which are used to import the static members of any class into the program so that we can access those static members directly without any class name or object.
+
+4) What is Wrapper class?
+Wrapper Class is used for converting primitive data type into object and object into a primitive data type.
+
+5) When we have primitive types why to go for Wrapper Classes?
+Wrapper classes help the Java program be completely object-oriented whereas primitive data types help in the simple declaration of values with variables. They also help the code be serializable.
+
+6) What is Auto Boxing and Auto Unboxing?
+converting a primitive value into object is called boxing. from java 1.5 onwards this procedure is done automatically by compiler hence it is called auto boxing.
+Unboxing: converting an object value into primitive type is called un boxing. from java 1.5 onwards this procedure is automatically done by compiler hence it is called auto un boxing
+
+
+7) What is Exception Hierarchy in Java?
+Exception is an unwanted or unexpected event, which occurs during the execution of a program, i.e. at run time, that disrupts the normal flow of the program’s instructions
+
+8) Checked Exceptions Vs Un-Checked Exceptions?
+These are the exceptions that are checked at compile time. If some code within a method throws a checked exception, then the method must either handle the exception or it must specify the exception using the throws keyword
+
+9) How to handle Exceptions?
+The try-catch is the simplest method of handling exceptions. 
+The try block must be followed by either catch or finally. The "catch" block is used to handle the exception.
+
+10) What is try-catch-finally?
+The try block is used to specify a block of code that may throw an exception. The catch block is used to handle the exception if it is thrown. The finally block is used to execute the code after the try and catch blocks have been executed.
+
+11) What is the difference between throws and throw?
+The 'throw' keyword is used to explicitly throw an exception from within a block of code or a method. The 'throws' keyword is used in the method signature to declare the exceptions that a method can potentially throw
+
+12) What is try with resources?
+The try -with-resources statement is a try statement that declares one or more resources. A resource is an object that must be closed after the program is finished with it
+
+13) Why to write Multiple Catch blocks & do you any alternate?
+Java allows you to handle different types of exceptions using multiple catch blocks.
+each catch block can handle a different type of exception, allowing you to respond to each exception in a specific way.
+
+14) How to create and throw User Defined Exception?
+ creating a new class that extends the Exception class or extends one of its subclasses, such as RuntimeException.
+
+15) What is JVM’s behaviour when Runtime Exception occurred?
+ the JVM terminates with a suitable message.
+
+16) What is Exception re-throw ?
+The exception can re-throw using throw keyword, if catch block is unable to handle it.
+
+17) Can you explain few checked exceptions?
+These are the exceptions that are checked at compile time. If some code within a method throws a checked exception, then the method must either handle the exception or it must specify the exception using the throws keyword
+
+18) Can you explain few Un-Checked exceptions?
+These are the exceptions that are not checked at compile time.n Java, exceptions under Error and RuntimeException classes are unchecked exceptions, everything else under throwable is checked.
+
+19) Can you write a program which gives Stack Overflow Error?
+StackOverflowError is an error which Java doesn’t allow to catch, for instance, stack running out of space, as it’s one of the most common runtime errors one can encounter.
+
+public class StackOverflowErrorClass { 
+    static int i = 0; 
+   
+    public static int printNumber(int x) 
+    { 
+  
+        i = i + 2; 
+        System.out.println(i); 
+        return i + printNumber(i + 2); 
+    } 
+  
+    public static void main(String[] args) 
+    { 
+        // Recursive call without any 
+        // terminating condition 
+        StackOverflowErrorClass.printNumber(i); 
+    } 
+} 
+
+20) What is the difference between final, finalize ( ) and finally block
+final::
+  final is the keyword and access modifier which is used to apply restrictions on a class, method or variable.	
+  finally::finally is the block in Java Exception Handling to execute the important code whether the exception occurs or not.	
+  finalize::finalize is the method in Java which is used to perform clean up processing just before object is garbage collected.
+
+
+------------------------------------------------------------------------------------------------------------------
+1) What is Collection and why we need it?
+A Collection represents a single unit of objects, i.e., a group.
+Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.
+
+2) What is Collection framework?
+The Collection framework represents a unified architecture for storing and manipulating a group of objects. 
+
+3) What is List and when to use it?
+List in Java provides the facility to maintain the ordered collection.
+
+4) How ArrayList works internally?
+Java ArrayList class uses a dynamic array for storing the elements.ArrayList is better for storing and accessing data.
+The underlying data structure is resizable (Internally it will use Array to store data)
+
+5) How LinkedList works internally?
+Java LinkedList class uses a doubly linked list to store the elements, manipulation is fast because no shifting needs to occur. can be used as a list, stack or queue.
+LinkedList is better for manipulating data.
+
+6) When to use ArrayList and When to Use LinkedList?
+Use ArrayList when you need fast random access and don't need to do a lot of insertion and deletion. Use LinkedList when you need fast insertion and deletion and don't need to do a lot of random access
+
+7) What is Cursor and How many cursors available?
+cursors are mainly used to access the elements of any collection
+3 Types:: Iterator; Enumeration; ListIterator. 
+
+8) What is Set?
+Set contains unique elements only.
+The set interface extends the Collection interface. An unordered collection or list in which duplicates are not allowed is referred to as a collection interface.
+
+9) How HashSet works internally?
+HashSet internally follows hashtable structure where all the elements are stored using hashing technique which will improve the performance by reducing the waiting time.
+
+10) What is TreeSet and when to use it?
+TreeSet is called as unordered Collection because it is not guarantee for insertion order of elements but all elements are stored in sorted order(bydefault ascending order)
+
+
+11) What is Comparable?
+Comparable provides a single sorting sequence. In other words, we can sort the collection on the basis of a single element such as id, name, and price.	Comparable provides compareTo() method to sort elements.	
+
+12) What is Comparator?
+The Comparator provides multiple sorting sequences. In other words, we can sort the collection on the basis of multiple elements such as id, name, and price etc.Comparator provides compare() method to sort elements.
+
+13) How to sort Objects?
+By using the Comparator<> interface you can sort the elements on the basis of any data member defined in the user-defined class.
+
+14) What is Map and when to use it?
+A map contains values on the basis of key, i.e. key and value pair. Each key and value pair is known as an entry. A Map contains unique keys.
+A Map is useful if you have to search, update or delete elements on the basis of a key.
+
+15) What is Hash Map?
+If you try to insert the duplicate key, it will replace the element of the corresponding key. It is easy to perform operations using the key index like updation, deletion, etc. HashMap class is found in the java.util package.
+
+16) How HashMap works internally?
+HashMap in Java is like the legacy Hashtable class, but it is not synchronized. It allows us to store the null elements as well, but there should be only one null key. 
+
+17) How to iterate a Map?
+ Remember that we cannot iterate over map directly using iterators, because Map interface is not the part of Collection.The most common way to iterate through a Map is by using the entrySet() method.
+
+18) What is Weak HashMap?
+WeakHashMap is an implementation of the Map interface. WeakHashMap is almost same as HashMap except in case of WeakHashMap, if object is specified as key doesn't contain any references- it is eligible for garbage collection even though it is associated with WeakHashMap. i.e Garbage Collector dominates over WeakHashMap.
+
+19) What is Identity HashMap?
+IdentityHashMap stores strong key reference. WeakHashMap stores the weak key reference. EnumMap stores the strong key reference. It uses equality operator (==) to search and get the values.
+
+20) What is Collections?
+Collections class is basically used with the static methods that operate on the collections or return the collection.
+
+21) What is Properties Class?
+Properties is a subclass of Hashtable. It is used to maintain a list of values in which the key is a string and the value is also a string i.e; it can be used to store and retrieve string type data from the properties file. Properties class can specify other properties list as it's the default.
+
+22) What are Fail-fast collection and Fail-Safe Collection?
+Fail-Fast systems abort operation as-fast-as-possible exposing failures immediately and stopping the whole operation. Whereas, Fail-Safe systems don't abort an operation in the case of a failure. Such systems try to avoid raising failures as much as possible.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

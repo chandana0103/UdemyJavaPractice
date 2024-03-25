@@ -1,0 +1,718 @@
+
+ hardvard cs50-youtube
+100 days of code-udemy
+
+algorithm by priston unicersity
+meta front end certificate-coruseera
+system design
+
+
+Java developed by James Gosling & his team in 1991 at Sun Microsystem Company
+
+1)J2SE / JSE (Java Standard Edition) → For stand-alone applications development
+2) J2EE / JEE (Java Enterprise Edition) → For Web applications development
+3) J2ME / JME (Java Micro / Mobile Edition) → For Mobile applications development
+
+feature:
+Simple,Platform Independent,OOP Language,Secure,Multi-Threading,Architectural Neutral,Portable,High Performance,Distributed.
+
+javac filename.java
+Java filename
+
+Translators are used to convert from one format to another format
+-> Interpreter will convert the program line by line (performance is slow)
+-> Compiler will convert all the lines of program at a time (performance is fast)
+-> Assembler is used to convert assembler programming languages into machine language
+
+JVM stands for Java Virtual Machine,JVM will be part of JRE software
+-> JVM will allocate memory required for program execution & de-allocate memory when it is not used
+-> JVM will convert byte code into machine understandable format
+
+Class loader: It will load .class file into JVM
+Method Area: Class code will be stored here
+Heap area: Objects will be stored into heap area
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+variables are used to store the data during program execution.
+To specify type of data we will use 'data types.
+1) Primitive Data Types.......number(int,byte,short,long),decimal(float,double),character(char),boolean
+2) Non-Primitive Data Types........Array,string,class
+
+1 byte=8bits
+
+Java Comments:
+1) single line comments
+Syntax:// this is single line comment
+2) multi line comments (when we don't want to compile multiple lines of code)
+/*
+commented code
+*/
+3) documentation comments (Used to generate API documentation)
+/**
+*
+* @author ashok
+*
+*/
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Operator is a symbol which tells to the compiler to perform some operation.
+
+• Arithmetic operators............+ - * / % ++ --
+• Relation operators..............== != > < >= <=
+• Logical operators...............&& || !
+• Assignment operators............= += -= *= /= %=
+• Conditional operators...........Syntax : epr1 ? expr2 : expr3
+• Misc. operators...........
+instanceOf operator.....It is a java keyword and used to test whether the given reference belongs to provided type or not. Type can be a class or interface. It returns either true or false.
+new operator.........new is java keyword or operator which is used to create the object
+. (Dot) operator.......reference.variable
+reference.method()
+ClassName.variable
+
+
+Control statements::
+1. Selection / Conditional statements....if,ifelse, nested if,ifelseif,switch
+2. Loop statements.........while,dowhile,for,foreach
+3. Jump / Branching / Transfer statements......break,continue,return
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Arrays
+-> Array is an object which contains elements of similar data type
+-> Array is also known as static data structure because size of an array must be specified at the time of its declaration.
+-> In Java, array is treated as an object and stores into heap memory. It allows to store primitive values or reference values.
+
+1) Single Dimensional Array
+2) Multidimensional Array
+
+
+Strings
+-> String is an object that represents sequence of characters.
+-> One important thing to notice about string object is that string objects are immutable that means once a string object is created it cannot be changed.
+String str = "hello";
+String s = new String("Hello");
+
+Why String Objects are given as immutable objects?
+An object can be referred by multiple reference variables in this case if string objects are mutable objects, then we change the content of object automatically other references get also modified so that string objects are given as immutable objects it means whenever any operation is done on strings it will create new object.
+
+String Manipulations:
+lenght()
+concat():concatenation
+charArray():convert string into character array
+charAt():retrive single character from a given string
+compareTo():The comparison is based on alphabetical order.
+contains():whether a substring is a part of the main String or not.The return type is Boolean.
+spilt()
+indexOf();search for the first occurrence of the character.
+lastIndexOf():search for the last occurrence of the character.
+toString():String equivalent of the object that invokes it.
+replace ():
+
+StringBuffer Class
+-> StringBuffer class is used to create a mutable string object. It means, it can be changed after it is created.
+It is also thread safe i.e multiple threads cannot access it simultaneously.
+append():
+insert() :
+reverse():
+replace():replaces the string from specified start index to the end index.
+capacity():
+
+Java StringBuilder class
+-> StringBuilder is identical to StringBuffer except for one important difference that it is not synchronized, which means it is not thread safe.
+
+-> When we want a mutable String without thread-safety then StringBuilder should be used 
+-> When we want a mutable String with thread-safety then StringBuffer should be used 
+-> When we want an Immutable object then String should be used.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+OOPs::Object Oriented Languages
+-> If we want to develop a project using OOP lanaguage then we have to use Classes & Objects
+
+OOPS Principles
+1) Encapsulation:-> Encapsulation is used to combine our variables & methods as single entity / unit
+-> Encapsulation provides data hiding
+-> We can achieve encapsulation using Classes
+2) Abstraction::-> Abstraction means hiding un-necessary data and providing only required data
+-> We can achieve Abstraction using interfaces & abstract classes.
+3) Polymorphism:-> Exhibiting multiple behaviours based on situation is called as Polymorphism
+4) Inheritance:Extending the properties from one class to another class is called as Inheritance
+
+Class:
+-> Class is a plan or model or template,blue print of object,used to declare variables & methods
+-> Project means collection of classes
+-> Once class is created then we can create any no.of objects for a class
+-> 'class' keyword is used to create Classes in java
+
+class classname{
+}
+
+Object
+-> Any real-world entity is called as Object,exist physically
+-> Objects will be created based on the Classes
+-> Without having the class, we can' create object (class is mandatory to create objects)
+-> Object creation means allocating memory in JVM
+-> 'new' keyword is used to create the objects
+
+classname variable=new classname();
+
+.hashCode()::JVM will assign unique hashcode for every object
+
+Variables
+-> Variables are used to store the data
+a) Global Variables / instance variables / non-static variables::
+-> Variables which are declared inside the class and outside the method are called as instance variables.can be accessed by all the methods available in the class.
+b) static variables::Static Variables
+-> The variables which are declared inside the class and outside the method with 'static' keyword are called as static variables
+When class is loaded into JVM then immediately memory will be allocated for static variables
+c) local variables::-> The variables which are declared inside the method or constructor or block are called as Local Variables.
+Before using local variables, we have to initialize them
+
+If we want to store different value based on object then use instance variable
+-> If we want to store same value for all objects then use static variable
+
+
+
+Methods:
+---------------------
+-> Methods are used to perform some operation / action
+-> In a class we can write any no. of methods including main method
+2 parts
+1) Method Declaration:Method declaration means we are going to decide what is the name of the method, what are the parameters it will take and what kind of value is return by the method.
+
+syntax:: returntype methodname(list of paramaters);
+
+->return type is data type,if method does not return any value, then return type must be specified using a java keyword called " void ".
+
+2) Method Body:method definition means we are going to write the group of statements that are executed by the method.
+
+returntype methodname(list of paramaters){
+//statements;
+return value;
+}
+
+-> In java we can create any number of methods which are in any of the following 4 combinations of methods
+1. method without return type, without parameters
+2. method without return type, with parameters
+3. method with return type, without parameters
+4. method with return type, with parameters
+
+
+Types of Methods
+-> Methods are divided into 2 types
+1) instance / non – static methods ---> Object level methods
+2) static methods ----> Class level methods
+In a class, we can write any no. of instance and static methods
+Not: To create static method we will use ‘static’ keyword.
+-> When we write methods in java class, by default JVM will not execute them. To execute our methods, we have to call them.
+-> instance method will be called by using Object
+objReference.methodName( .. ) ;
+-> static method will be called by using Class Name
+ClassName.methodName( .. );
+
+main ( ) method::Java program execution will be begin from main() method
+-> JVM always expect main()
+
+1.public:public is keyword/ modifier / access specifier which indicates the particular entity can be accessed from any location. main() method should be declared as public so that JVM can execute the main() method from any location.
+2. static:static is keyword/ modifier which indicates the particular method can access directly by using class name.
+main() method should be declared as static so that JVM can access the main() method directly by using class name.
+3. void:void is keyword/ return type which indicates the particular method does not return any value. JVM is not expecting any value to be return from main() method so that main() method should have the return type as void.
+String args[]:
+parameters of main () method are mainly used to accept the command line arguments to resolve the problem of hard coding.
+
+System: System is a predefined class available in java. lang package
+Out: out is reference variable of PrintStream class which is holding an object of PrintStream class and declared in.
+Println () : println() is the instance method of PrintStream class.
+
+Method Recursion:
+In Java, a method that calls itself is known as a recursive method. And, this process is known as recursion.
+Recursion Syntax
+Any method that implements Recursion has two basic parts:
+a) Method call which can call itself i.e. recursive
+b) A precondition that will stop the recursion.
+
+
+Constructors:
+A constructor is a special method that is used to initialize an object / instance variables.
+• Constructor name must be same as Class Name
+• Constructor cannot take any return type but if we write any return type then the code is valid but it is considered as normal method
+• We cannot return any value from the constructor
+• Constructors can take one or parameters
+
+1) 0 Parameterized Constructor
+syntax:
+	public class user{
+		user() {
+		}
+	}
+2) Parameterized Constructor
+	public class user{
+		user(int age){
+		}
+	}
+
+consructor overloading::defining two or more constructors with the same name but with different signatures is called constructor overloading in java.
+ex:
+Account(int a);
+Account(int a,int b);
+Account(String a,int b);
+
+Keywords::
+-----------------
+this:this is a keyword which is used to refer current object of a class. we can it to refer any member of the class. It means we can access any instance variable and method by using this keyword.
+• this can be used to invoke current class constructor.
+• this can be passed as an argument to another method.
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+• Access Modifiers::Access modifiers are keywords in Java that are used to set accessibility.
+--------------------------
+• Default: Default has scope only inside the same package
+• Public: Public has scope that is visible everywhere
+• Protected: Protected has scope within the package and all sub classes
+• Private: Private has scope only within the classes
+Java also supports many non-access modifiers, such as static, abstract, synchronized, native, volatile, transient etc.
+
+
+• Encapsulation
+--------------------------------
+
+• Inheritance::
+------------------
+inheritance is the one of most important concepts of OOPS
+-> inheritance means taking the properties of on class into another class
+-> in inheritance the class which is giving properties is called as parent class or super class or base class
+-> in inheritance the class which is taking properties is called as child class or sub class or derived class
+-> The main advantage of inheritance is re usability
+-> To achieve inheritance we will use ‘extends’ keyword
+
+class Vehicle{		//Vehicle is super class of Car.
+..........
+}
+class Car extends Vehicle{	//Car is sub class of Vehicle.
+	//extends the property of vehicle class
+}
+
+Types of Inheritances::
+• Single Inheritance
+• Multilevel Inheritance
+• Hierarchical Inheritance
+• Multiple Inheritance:child class is taking properties from multiple parent classes in this case if we have same property in all the parent classes then it is a confusion to child class to decide to take the particular property from which parent class, hence multiple inheritance is not supported in Java.
+>>super keyword is used to refer to immediate parent class of a child class. In other words super keyword is used by a subclass whenever it need to refer to its immediate super class.
+
+• Polymorphism:defining one entity with multiple behaviours
+---------------------
+types of poly morphisms.
+1. Compile time polymorphism::
+If polymorphism is decided at the time of compilation by java compiler.
+Note: By using the concept of method overloading we can achieve this compile time poly morphism.
+2. Runtime Polymorphism::If polymorphism is decided at the time of execution time by JVM.
+By using the concept of method overriding we can achieve this runtime poly morphism.
+
+Method overloading::
+declaring multiple methods with same method name but having different method signature.
+ 3 Rules
+• Method name must be same for all methods
+• List of parameters must be different like different type of parameters, different number of parameters, different order of parameters.
+• Return type is not considered in method overloading; it means we never decide method overloading with return type.
+
+Method overriding::declaring 2 methods with same method signature in 2 different classes which are having IS-A relation(class extedning from another class).
+• Method name must be same
+• List of parameters must be same
+• Return type must be same
+• Private, final and static methods cannot be overridden.
+• There must be an IS-A relationship between classes (inheritance).
+
+Final keyword::keyword or modifier which can be used at variables, methods & classes.
+-> If we declare a variable as final then we can’t modify value of the variable. The variable acts like a constant. Final field must be initialized when it is declared.
+-> If we declare a method as final then we can't override that method
+-> If we declare a class as final then we can't extend from that class. We cannot inherit final class in Java.
+
+Type casting:: process of converting value from one type to another type.
+1.type casting w.r.t primitive data types:converting value from one primitive data type to other primitive data type
+-> Type casting can be done only between compatible data types byte, short, int, long, float, double, char.
+1) Widening:converting the value from lower data type into higher data type.
+syntax:
+higher datatype=(higher datatype)lowerdatatype;
+2) Narrowing:narrowing means converting the higher data type value into smaller data type.
+syntax:
+lowerdatatype = (lowerdatatype) higherdatatype;
+
+2.type casting w.r.t reference types::converting the object from one reference type to another reference type
+-> The two references said to be compatible if and only if its corresponding classes having Is->A relation
+1) Up Casting:Up casting means storing the child class object into the parent class reference.
+syntax:
+parentreferencetype = (parentreferencetype) childreferencetype
+Note: In up casting writing typecasting is optional
+2) Down Casting:storing the Parent class object into the child class reference.
+syntax: childreferencetype = (childreferencetype) parentreferencetype
+Note: In down casting writing typecasting is mandatory
+
+
+• Abstraction
+• Interfaces::
+---------------------
+-> An interface is a fully abstract class. It includes a group of abstract methods (methods without a body).We use the interface keyword to create an interface in Java.
+It contains abstract methods: getType() and getVersion().
+Note:
+-> All the variables declared in interface are public static final by default whether we specify or not
+-> All the methods declared in interface are public abstract by default whether we specify or not
+public: all the variables and methods declared in interface are public so that they can be accessible from any where.
+static: variables declared in interface are by default static so that they can be accessible directly by using the interface name.
+final: the variables declared in interface are by default final it means they are constant whose value cannot be changed.
+abstract: all the methods declared in interface are abstract because they don’t contain any method body.
+>>Once an interface is implemented by any class then that class must provide the implementation for all the abstract methods available in the particular interface. This class is also called as implementation class or child class.
+• For example, if our class is not providing implementation for at least 1 method then our class must be declared as abstract
+Why do we use an Interface?
+• It is used to achieve total abstraction.
+• Since java does not support multiple inheritances in the case of class, by using an interface it can achieve multiple inheritances.
+• It is also used to achieve loose coupling.
+• Interfaces are used to implement abstraction. So the question arises why use interfaces when we have abstract classes?
+
+Default Methods in interfaces::Default methods are methods that can have a body.
+Before Java 8, we could only declare abstract methods in an interface. However, Java 8 introduced the concept of default methods.
+Before Java 8, if a new method was introduced in an interface then all the implementing classes used to break. We would need to provide the implementation of that method in all the implementing classes.
+we can declare that method as a default in the interface and provide its implementation in the interface itself.
+>>The static methods in interfaces are similar to default methods but the only difference is that you can’t override them.
+Functional interfaces
+Functional interfaces are new additions in Java 8. As a rule, a functional interface can contain exactly one abstract method. These functional interfaces are also called Single Abstract Method interfaces (SAM Interfaces)
+
+
+
+• Abstract Classes:
+------------------------
+A class which is declared using abstract keyword known as abstract class.ay or may not have abstract methods.
+-> We cannot create object of abstract class.
+Syntax :abstract class class_name { }
+Abstract method::
+Method that are declared without any body within an abstract class are called abstract method.
+
+When to use Abstract Methods & Abstract Class?
+Abstract methods are usually declared where two or more subclasses are expected to do a similar thing in different ways through different implementations. These subclasses extend the same Abstract class and provide different implementations for the abstract methods.
+Abstract classes are used to define generic types of behaviours at the top of an object-oriented programming class hierarchy, and use its subclasses to provide implementation details of the abstract class.
+
+
+Variable Arguments In Java::
+-> In Java version 1.5, Java has included a feature that simplifies the creation of methods that need to take a variable number of arguments.
+-> A method that takes a variable number of arguments is a var-args method.
+
+• Java.lang. Object class::
+-----------------------------
+-> Object class is present in java.lang package.
+-> Every class in Java is directly or indirectly derived from the Object class.
+-> If a class does not extend any other class, then it is a direct child class of Object and if extends another class then it is indirectly derived.
+-> Object class methods are available to all Java classes. Hence Object class acts as a root of inheritance hierarchy in any Java Program.
+-> Below are the methods available in java.lang.Object class
+
+1. String toString()
+This method used to represent the object in the form of string. when we display any object it will call toString() method automatically whether we specify or not
+
+2. Class getClass()
+-> This method returns the object in the form of Class using which we can get the information of particular class like class name, belongs what package,.....
+-> When ever we want to know what it is underlying class name of the particular object we have to use getClass() method of Object class.
+
+3.int hashCode()
+-> This method returns hashcode of the particular object .
+-> Hashcode is a unique identification number which holds address of the corresponding object.
+
+
+6. finalize() in Java
+The finalize() method is called by the Garbage Collector when there are no more references to the object in question. Thus, finalize() is called just before an object is garbage collected.
+
+
+• Packages::
+--------------
+A package is nothing but group of related classes, interfaces, and sub-packages according to their functionality.
+Types of Packages in Java
+There are two different types of packages in Java. They are:
+1. Predefined Packages in Java (Built-in Packages)
+Built-in packages are existing java packages that come along with the JDK. For example, java.lang, java.util, java.io, etc.
+2. User-defined Package
+The package which is defined by the user is called a User-defined package. It is used to create user-defined classes and interfaces.
+
+>>Creating package in Java
+Java supports a keyword called “package” which is used to create user-defined packages in java programming.
+To import java package into a class, we need to use java import keyword which is used to access package and its classes into the java program.
+There are 3 different ways to refer to any class that is present in a different package:
+• without import the package
+• import package with specified class
+• import package with all classe
+
+
+
+• Wrapper Classes::
+--------------------------
+In Java, Wrapper Class is used for converting primitive data type into object and object into a primitive data type.
+-> From J2SE 5.0 version the feature of autoboxing and unboxing is used for converting primitive data type into object and object into a primitive data type automatically.
+
+Constructors of Wrapper classes
+-> to create an object for any Wrapper class we have to use constructors of Wrapper classes.
+-> In all most all wrapper classes we have following 2 constructors
+-> first one will take primitive value directly
+-> and second one will take primitive value in the form of String
+
+
+• Exception Handling::
+-------------------------------
+Exception handling is a mechanism to catch and throw Java exceptions so that the execution of the program will not get disturbed.
+Exception::
+--------------
+Exception is an unwanted or unexpected event, which occurs during the execution of a program, i.e. at run time, that disrupts the normal flow of the program’s instructions.
+An exception can occur for many reasons. Some of them are:
+• Invalid user input
+• Device failure
+• Loss of network connection
+• Physical limitations (out of disk memory)
+• Code errors
+• Opening an unavailable file
+• resource exhaustion
+
+Error: An Error indicates a serious problem that a reasonable application should not try to catch.
+Exception: Exception indicates conditions that a reasonable application might try to catch.
+
+Checked Exceptions::
+---------------------
+These are the exceptions that are checked at compile time. If some code within a method throws a checked exception, then the method must either handle the exception or it must specify the exception using the throws keyword.
+Un Checked Exceptions:
+---------------------------
+Unchecked exceptions are not checked by the compiler. When the buggy code is executed then we will get exception at runtime, these are called runtime exceptions.
+
+
+Exception Handling Keywords
+In java, we can handle exceptions using below 5 keywords
+1. try::The try block is used to enclose the suspected code. Suspected code is a code that may raise an exception during program execution.
+2. catch::The catch block also known as handler is used to handle the exception. It handles the exception thrown by the code enclosed into the try block. Try block must provide a catch handler or a finally block.
+3. finally::-> A finally keyword is used to create a block of code that follows a try block.
+-> A finally block of code is always executed whether an exception has occurred or not.
+-> Using a finally block, it lets you run any clean up type statements that you want to execute, no matter what happens in the protected code.
+-> A finally block appears at the end of catch block.
+4. throw::
+-> The throw keyword is used to throw an exception explicitly.
+-> By default all predefined exceptions are created and thrown implicitly and identified by JVM
+-> If we want to throw the exceptions explicitly then we have to use throw keyword.
+5. throws::
+The throws keyword is used to declare the list of exception that a method may throw during execution of program. Any method that is capable of causing exceptions must list all the exceptions possible during its execution, so that anyone calling that method gets a prior knowledge about which exceptions are to be handled. A method can do so by using the throws keyword.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Collections Framework::
+-------------------------------------
+
+COLLECTIONS
+-> Array is an collection of fixed number of homogeneous data elements
+OR
+-> An array represents a group of elements of same data type.
+-> The main advantage of array is we can represent huge number of elements by using single variable. So, the readability of the code is improved.
+Limitations of array:
+-----------------------
+-> Arrays are fixed in size that is once we create an array there is no chance of increasing or decreasing the size of array based on our requirement. Hence to use array concept we must know the size in advance which may not possible every time.
+-> Arrays can hold only homogeneous data elements.
+Example:
+Car c = new Car [100];
+c[0] = new Car(); // Valid
+c[1] = new Bus(); //Invalid(Compile time Error)
+-> We can resolve this problem by using Object type Array (Object [ ] )
+Example:
+Object[] o=new Object[100];
+o[0]=new Car();
+o[1]=new Bus();
+
+Collection: If we want to represent a group of objects as single entity then we should go for Collections.
+Collection framework: It defines several classes and interfaces to represent a group of Objects as single entity.
+
+difference between Collection and Collections?
+• Collection is an interface
+• Collections is a Class
+
+All the collection classes are classified into three categories
+1) List::
+- This category is used to store group of individual elements where the elements can be duplicated.
+- List is an Interface whose object can not be created directly.
+- To work with this category we have to use following implementations class of list interface
+Ex: ArrayList, Linked list, Vector, Stack
+
+2) Set::
+- This category is used to store a group of individual elements. But they elements can’t be duplicated.
+- Set is an interface whose object cannot be created directly.
+- To work with this category, we have to use following implementations class of Set interface
+Ex: HashSet, LinkedHashSet and TreeSet
+
+3) Queue::
+-> This category is used to hold the elements about to be processed in FIFO(First In First Out) order.
+-> It is an ordered list of objects with its use limited to inserting elements at the end of the list and deleting elements from the start of the list, (i.e.), it follows the FIFO or the First-In-First-Out principle
+Ex: PriorityQueue, BlockingQueue
+
+4) Map:
+- This category is used to store the element in the form key value pairs where the keys can’t be duplicated, values can be duplicated.
+- Map is an interface whose object cannot be created directly.
+- To work with this category, we have to use following implementation classes of Map interface
+Ex: HashMap, LinkedHashMap, TreeMap, Hashtable
+
+List interface
+-> It is the child interface of Collection
+-> If we want to represent a group of individual objects where duplicates are allowed and insertion order is preserved. Then we should go for List.
+-> We can differentiate duplicate Objects and we can maintain insertion order by means of index hence "index plays important role in List"
+
+ArrayList:
+-> ArrayList is an implementation class of Collection interface
+->The underlying data structure is resizable (Internally it will use Array to store data)
+-> Duplicate Objects are allowed
+-> Insertion order is preserved
+-> Heterogeneous Objects are allowed
+-> Null insertion is possible
+
+ArrayList Constructors:
+1) ArrayList al=new ArrayList();
+-> It creates an empty ArrayList Object with default initial capacity 10
+2) ArrayList al=new ArrayList(int initialCapacity);
+3) ArrayList al=new ArrayList(Collection c);
+
+LinkedList:
+If our frequent operation is insertion or deletion in the middle then LinkedList is the best choice
+-> If our frequent operation is retrieval then LinkedList is not best option
+-> Duplicate Objects are allowed
+-> Insertion order is preserved
+LinkedList Constructors:
+1) LinkedList l=new LinkedList();
+It creates an empty LinkedList Object.
+2) LinkedList l=new LinkedList(Collection c);
+To create an equivalent LinkedList Object for the given Collection.
+
+
+IQ: what is the diff b/w ArrayList and LinkedList
+-> ArrayList is slower in insertion and deletion of elements because it internally requires shifting operations, But faster in accessing the elements because ArrayList use index position for every element.
+-> LinkedList is faster in insertion and deletion of elements because it just require modifying the links of nodes instead of shifting operations, But slower in accessing the elements because LinkedList does not use any index position.
+
+stack
+-> Stack is a child class of Vector and implements List interface
+-> Stack stores a group of objects b using a mechanism called LIFO
+-> LIFO stands for Last in first out , it means last inserted element deleted first.
+methods:E push(E obj) : this method will add new element into the Stack
+2. E pop() : this method deletes the top element available on Stack
+3. E peek() : this method just returns the top element available on Stack
+
+
+
+Cursors of Collection Framework
+-> cursors are mainly used to access the elements of any collection
+1.Iterator:access the elements in forward direction only,applied Any Collection (List, Set)
+-> while accessing the methods we can also delete the elements
+-> Iterator is interface and we cannot create an object directly.
+-> if we want to create an object for Iterator, we have to use iterator () method
+Creation of Iterator:
+Iterator it = c.iterator();
+here iterator() method internally creates and returns an object of a class which implements Iterator interface.
+
+Methods::
+1. boolean hasNext()
+2. Object next()
+3. void remove()
+
+2.ListIterator:: access the elements of Collection in both forward and backward directions
+-> This cursor can be applied only for List category Collections
+-> While accessing the methods we can also add,set,delete elements
+-> ListIterator is interface and we can not create object directly.
+-> If we want to create an object for ListIterator we have to use listIterator() method
+methods:
+1. boolean hasNext();
+2. Object next();
+3. boolean hasPrevious();
+4. Object previous();
+5. int nextIndex();
+6. int previousIndex();
+7. void remove();
+8. void set(Object obj);
+9. void add(Object obj);
+
+
+3.Enumeration::-> this cursor is used to access the elements of Collection only in forward direction
+-> this is legacy cursor can be applied only for legacy classes like Vector,Stack,Hashtable.
+-> Enumeration is also an interface and we can not create object directly.
+-> If we want to create an object for Enumeration we have to use a legacy method called elements() method
+Methods
+1. boolean hasMoreElements()
+2. Object nextElement();
+
+Set category::
+-------------
+-> HashSet is the implementation class of Set interface which is also used to store group of individual objects but duplicate values are not allowed
+-> HashSet internally follows hashtable structure where all the elements are stored using hashing technique which will improve the performance by reducing the waiting time.
+HashSet is called unordered Collection because it is not guarantee for insertion order of elements.
+
+-> LinkedHashSet is the implementation class of Set interface which is also used to store group of individual objects but duplicate values are not allowed
+-> LinkedHashSet internally follows hashtable + doubly linked list structures
+LinkedHashSet is called as ordered Collection because it is guarantee for insertion order of elements
+
+sortedset:
+1) It is child interface of Set
+2) If we want to represent a group of "unique Objects" according to some sorting order then we should go for SortedSet interface.
+3) That sorting order can be either default natural sorting order OR customized sorting order.
+
+
+TreeSet is the implementation class of Set interface which is also used to store group of individual objects but duplicate values are not allowed
+TreeSet is called as unordered Collection because it is not guarantee for insertion order of elements but all elements are stored in sorted order(bydefault ascending order)
+
+Comparable interface:
+Comparable interface present in java.lang package and contains only one method compareTo() method.
+public int compareTo(Object obj);
+
+Comparator interface:
+Comparator interface present in java.util package. It defines the
+following two methods.
+1) public int compare(Object o1,Object o2);
+2) public boolen equals(Object o);
+
+Comparable vs Comparator
+For predefined Comparable classes default natural sorting order is already available, if we are not satisfied with default natural sorting order then we can define our own customized sorting order by Comparator.
+For predefined non Comparable classes (Like StringBuffer) default natural sorting order is not available, we have to define our own sorting order by using Comparator Object.
+For our own classes(Like Customer,Student and Employee) we can define default natural sorting order by using Comparable interface. The person who is using our class, if he is not satisfied with default natural sorting order then he can define his own sorting order by using Comparator Object.
+
+Map category:
+Map interface is not child interface of Collection and hence we cannot apply Collection interface methods. Map interface defines the following specific methods.
+
+HashMap
+-> HashMap is the implementation class of Map interface which is used to store group of objects in the form of Key-Value pairs where but Keys cannot be duplicated but values can be duplicated
+-> HashMap is called unordered Map because it is not guarantee for insertion order of elements.
+
+
+LinkedHashMap
+-> LinkedHashMap is the implementation class of Map interface which is also used to store group of3 objects in the form of Key-Value pairs where Keys can't be duplicated but values can be duplicated
+-> LinkedHashMap is called as ordered Map because it is guarantee for insertion order of elements.
+
+SortedMap:
+-> It is the child interface of Map.
+-> If we want to represent a group of key-value pairs according to some sorting order of keys then we should go for SortedMap.
+-> Sorting is possible only based on the keys
+
+
+TreeMap
+-> TreeMap is the implementation class of Map interface which is also used to store group of objects in the form of Key-Value pairs where Keys can't be duplicated but values can be duplicated.
+TreeMap is called as unordered Map because it is not guarantee for insertion order of elements, but. all elements are
+
+
+Hashtable
+-> Hashtable is the implementation class of Map interface which is also used to store group of objects in the form of Key-Value pairs where Keys can't be duplicated but values can be duplicated
+-> Hashtable is exactly similar to HasMap but Hashtable is a synchronized class where HashMap is not a synchronized class
+-> Hashtable does not support null values for both Keys and Values
+
+IdentityHashMap
+It is exactly same as HashMap except the following differences.
+1) In the case of HashMap JVM will always use equals() method to identify duplicate keys.
+2) But inn the case of IdentityHashMap JVM will use == (double equal to operator) to identify duplicate keys.
+
+WeakHashMap:
+-> It is exactly same as HashMap except the following differences.
+-> In the case of normal HashMap, an Object is not eligible for Garbage Collection even though it does not have any references if it is associated with HashMap. That means HashMap dominates Garbage Collector.
+
+Collections:
+-> Collections class is basically used with the static methods that operate on the collections or return the collection.
+-> All the methods of this class throw the NullPointerException if the collection or object passed to the methods is null.
+
+
+Java String tokenizer:"
+-> StringTokenizer is a class present in the java.util package and it is used to break a String into tokens based on provided delimiter.
+-> Delimiter can be specified either at the time of object creation or on a per-token basis.
+Following are the constructors in StringTokenizer class
+
+

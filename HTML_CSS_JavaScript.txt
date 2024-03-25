@@ -1,0 +1,55 @@
+HTML:HyperText MarkupLanguage,html 5
+>used to make web pages
+>not a programming language, markup langugage
+>text and images, but markup describing the formatting you want. For example, bold text,tables 
+<html>....contains all elements
+metadata tags:
+<head>......info about page title,scripts
+<title>.....page title
+sectioning tags:
+<body>.....contains all items seen on page
+<h1......section header,<h2>,<h3>....
+
+<p>.....paragraph
+<div>.....defines section of web page
+
+<b>......text stylistically different-bold
+<em>......emphasize text(slanted text)
+
+images and multimedia tags:
+<img src=" link"/>...width also reduced.
+<a href=" link">for tagging a link</a>(for opening other website)
+
+simple lists:
+<ul>.......unordrerd(inside ul must have sequence of li elements)
+<li>.......list orderd
+<ol>.....orderd list(inside ol must have sequence of li elements,like 1,2,3,.....A,B,C...)
+
+tables:
+info in rows and columns
+<table>
+<tr>........rows
+<th>.......header elements in row
+<td>......table cells
+
+Building a webpage
+https://codepen.io
+
+CSS:Cascading Style Sheets
+-----------------------------------------------------
+specifies look and formating
+h1 {
+	text-align:center;
+	color:blue;
+}
+
+140 standard color names
+specify by number
+rgb(red,green,blue)
+#hex value
+color picker: https://developer.mozilla.org/en-US/docs/web/CSS/Tool/ColorPicker_tool
+
+
+everything in the computer was presented with numbers.
+
+
